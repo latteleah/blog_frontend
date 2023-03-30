@@ -18,6 +18,7 @@ axios.interceptors.request.use(config => {
 axios.interceptors.response.use(
     response => {
         console.log("entered interceptors.response")
+        console.log(process.env.BACKEND_URL)
         return response},
     err => {
         if(err.response.status === 401){
