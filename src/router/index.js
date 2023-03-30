@@ -9,7 +9,7 @@ import RegularPost from '../views/RegularPost.vue'
 
 
 const router = createRouter({
-  history: createWebHistory(process.env.BACKEND_URL),
+      history: createWebHistory(),
   routes: [
     {
       path: '/home',
